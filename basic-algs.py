@@ -60,14 +60,5 @@ def dc_max_run(list):
     return dc_max(list)
 
 
-# Quick Sort
-def quick_sort(list):
-    if len(list) < 2:
-        return list
-    
-    pivot = list[0]
-    lesser = [i for i in list if i<pivot]
-    greater = [i for i in list if i>pivot]
 
-    return quick_sort(lesser) + [pivot] + quick_sort(greater)
 
